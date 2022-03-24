@@ -10,7 +10,9 @@
     <div class="content">
         <h1>Ice Cream Shoppe!</h1>
     <form>
-        <div class="row">
+
+            <fieldset>
+                <legend>Customer:</legend>
             <div>
                 <label for="firstname">First</label>
                 <input id="firstname" name="first_name" type="text">
@@ -19,9 +21,11 @@
                 <label for="lastName">Last</label>
                 <input id="lastname" name="last_name" type="text">
             </div>
-        </div>
-    </form>
+            </fieldset>
         <div>
+            <div class="row">
+            <fieldset>
+                <legend>Ice Cream Flavors</legend>
             <div>
                 <input type="radio" id="vanilla" name="icecream">
                 <label for="vanilla">Vanilla</label>
@@ -34,7 +38,10 @@
                 <input type="radio" id="chocolate" name="icecream">
                 <label for="strawberry">Chocolate</label>
             </div>
+                </fieldset>
             <div>
+                <fieldset>
+                    <legend>Ice Cream Sizes</legend>
                 <div>
                     <input type="radio" id="small" name="size">
                     <label for="small">Small</label>
@@ -47,7 +54,49 @@
                     <input type="radio" id="large" name="size">
                     <label for="large">Large</label>
                 </div>
+                    </fieldset>
             </div>
+            <div>
+                <fieldset>
+                    <legend>Ice Cream Topping</legend>
+                <div>
+                    <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">
+                    <label for="sprinkles">Sprinkles</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="whippedCream" name="whippedCream" value="whippedCream">
+                    <label for="whippedCream">Whipped Cream</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="caramel" name="caramel" value="caramel">
+                    <label for="caramel"> Caramel Sauce </label>
+                </div>
+                    </fieldset>
+            </div>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Ice Cream Cones</legend>
+
+                <label for="container">Please Choose One</label>
+                <select name="container" id="container">
+                    <option value="cup">Plastic Cup</option>
+                    <option value="sugar">Sugar Cone </option>
+                    <option value="waffle">Waffle Cone</option>
+                    <option value="dippedWaffle"> Chocolate Dipped Waffle</option>
+                </select>
+                    </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Ice Cream Requests</legend>
+                <label for="SpecialRequests"> Special Requests</label>
+                <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10" placeholder="Allergic to peanuts, substitutions, etc."></textarea>
+                    </fieldset>
+            </div>
+            <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+            <button type="sumbit"> Submit Order </button>
+            </form>
         </div>
 </div>
 </div>
